@@ -20,12 +20,7 @@ This project aims to predict machine downtime using a Logistic Regression model 
 - Description: Upload a CSV file containing manufacturing data.
 - Input: CSV file (e.g., Machine_ID, Temperature, Run_Time).
 
-3. Train Endpoint
-- URL: /train
-- Method: POST
-- Description: Train the model on the uploaded dataset.
-
-4. Predict Endpoint
+3. Predict Endpoint
 - URL: /predict
 - Method: POST
 - Description: Predict downtime based on input data.
