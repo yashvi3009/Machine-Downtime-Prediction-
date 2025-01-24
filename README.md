@@ -9,12 +9,12 @@ This project aims to predict machine downtime using a Logistic Regression model 
 - Confidence Scores: Each prediction includes a confidence score to assist with decision-making.
 
 ### API Endpoints
-1.Root Endpoint
+1. Root Endpoint
 - URL: /
 - Method: GET
 - Description: Welcome message for the API.
   
-2.Upload Endpoint
+2. Upload Endpoint
 - URL: /upload
 - Method: POST
 - Description: Upload a CSV file containing manufacturing data.
@@ -31,9 +31,9 @@ This project aims to predict machine downtime using a Logistic Regression model 
 - Description: Predict downtime based on input data.
 
 #### Technologies Used
-Programming Language: Python
-Libraries: FastAPI (RESTful API), Scikit-learn (Logistic Regression model), Pandas, NumPy (Data processing), Pickle (Model persistence)
-Tools: Git, VS Code
+- Programming Language: Python
+- Libraries: FastAPI (RESTful API), Scikit-learn (Logistic Regression model), Pandas, NumPy (Data processing), Pickle (Model persistence)
+- Tools: Git, VS Code
 
 #### Installation & Setup
 1. Clone the Repository :
