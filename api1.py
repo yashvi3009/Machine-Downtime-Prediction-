@@ -12,9 +12,9 @@ class PredictionItem(BaseModel):
     Temperature: float
     Run_Time: int
 
-@app.get('/')
-def index():
-    return {'message': 'Hello, World'}
+@app.get("/")
+async def root():
+    return {"message": "Welcome to the Machine Downtime Prediction API. Use /predict or /upload endpoints."}
 
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
@@ -42,5 +42,5 @@ async def predict(item: PredictionItem):
 
     return {
         "Downtime": "Yes" if yhat == 1 else "No",
-        "Confidence": round(confidence, 2)
+        "Confidence": float(confidence)
     }
